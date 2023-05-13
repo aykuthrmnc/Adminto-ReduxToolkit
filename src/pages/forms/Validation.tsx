@@ -212,7 +212,7 @@ const BasicForm = () => {
             password: yup.string().required('Please enter Password'),
             confirmpassword: yup
                 .string()
-                .oneOf([yup.ref('password'), null], "Passwords don't match")
+                .oneOf([yup.ref('password'), undefined], "Passwords don't match")
                 .required('This value is required.'),
             checkbox: yup.bool().oneOf([true], 'Must accept Terms and Conditions'),
         })
@@ -284,7 +284,7 @@ const HorizontalForm = () => {
             password2: yup.string().required('Please enter Password'),
             confirmPassword2: yup
                 .string()
-                .oneOf([yup.ref('password'), null], "Passwords don't match")
+                .oneOf([yup.ref('password'), undefined], "Passwords don't match")
                 .required('This value is required.'),
             webSite: yup.string().required('Please enter URL'),
             horizontalCheck: yup.bool().oneOf([true], 'Must accept Terms and Conditions'),
@@ -415,7 +415,7 @@ const ValidationTypes = () => {
             equalTo1: yup.string().required('This value is required.'),
             equalTo2: yup
                 .string()
-                .oneOf([yup.ref('equalTo1'), null], 'This value should be the same.')
+                .oneOf([yup.ref('equalTo1'), undefined], 'This value should be the same.')
                 .required('This value is required.'),
             url: yup.string().required('This value is required.').url('This value should be a valid url.'),
             digits: yup

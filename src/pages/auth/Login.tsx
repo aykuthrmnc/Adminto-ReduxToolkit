@@ -60,8 +60,8 @@ const Login = () => {
     */
     const schemaResolver = yupResolver(
         yup.object().shape({
-            email: yup.string().required(t('Lütfen geçerli bir kullanıcı adı giriniz.')),
-            password: yup.string().required(t('Lütfen parolanızı giriniz.')),
+            email: yup.string().required(t('Lütfen geçerli bir kullanıcı adı giriniz.')!),
+            password: yup.string().required(t('Lütfen parolanızı giriniz.')!),
         })
     );
 
@@ -103,12 +103,12 @@ const Login = () => {
                     <FormInput
                         type="text"
                         name="email"
-                        label={t('Kullanıcı Adı')}
-                        placeholder={t('Kullanıcı Adınızı Giriniz')}
+                        label={t('Kullanıcı Adı')!}
+                        placeholder={t('Kullanıcı Adınızı Giriniz')!}
                         containerClass={'mb-3'}
                     />
                     <FormInput
-                        label={t('Parola')}
+                        label={t('Parola')!}
                         type="password"
                         name="password"
                         placeholder="Parolanızı Giriniz"

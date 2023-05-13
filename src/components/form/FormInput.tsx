@@ -1,7 +1,6 @@
 import { useState, InputHTMLAttributes } from 'react';
 import { Form, InputGroup } from 'react-bootstrap';
 import classNames from 'classnames';
-
 import { FieldErrors, Control } from 'react-hook-form';
 
 type FormInputProps = InputHTMLAttributes<HTMLInputElement> & {
@@ -12,7 +11,7 @@ type FormInputProps = InputHTMLAttributes<HTMLInputElement> & {
     comp?: string;
     placeholder?: string;
     register?: any;
-    errors?: FieldErrors;
+    errors?: FieldErrors | any;
     control?: Control<any>;
     className?: string;
     labelClassName?: string;
@@ -49,7 +48,7 @@ const PasswordInput = ({
                         if (refCallback) refCallback(r);
                     }}
                     className={className}
-                    isInvalid={errors && errors[name] ? true : false}
+                    isInvalid={errors && errors?.[name] ? true : false}
                     {...(register ? register(name) : {})}
                     autoComplete={name}
                     {...otherProps}
@@ -58,20 +57,18 @@ const PasswordInput = ({
                     className={classNames('input-group-text', 'input-group-password', {
                         'show-password': showPassword,
                     })}
-                    data-password={showPassword ? 'true' : 'false'}
-                >
+                    data-password={showPassword ? 'true' : 'false'}>
                     <span
                         className="password-eye"
                         onClick={() => {
                             setShowPassword(!showPassword);
-                        }}
-                    ></span>
+                        }}></span>
                 </div>
             </InputGroup>
 
             {errors && errors[name] ? (
                 <Form.Control.Feedback type="invalid" className="d-block">
-                    {errors[name]['message']}
+                    {errors?.[name]?.['message']}
                 </Form.Control.Feedback>
             ) : null}
         </>
@@ -121,12 +118,11 @@ const TextualInput = ({
                         isInvalid={errors && errors[name] ? true : false}
                         {...(register ? register(name) : {})}
                         rows={rows}
-                        {...otherProps}
-                    ></Form.Control>
+                        {...otherProps}></Form.Control>
 
-                    {errors && errors[name] ? (
+                    {errors && errors?.[name] ? (
                         <Form.Control.Feedback type="invalid" className="d-block">
-                            {errors[name]['message']}
+                            {errors?.[name]?.['message']}
                         </Form.Control.Feedback>
                     ) : null}
                 </>
@@ -160,14 +156,14 @@ const CheckInput = ({
                     if (refCallback) refCallback(r);
                 }}
                 className={className}
-                isInvalid={errors && errors[name] ? true : false}
+                isInvalid={errors && errors?.[name] ? true : false}
                 {...(register ? register(name) : {})}
                 {...otherProps}
             />
 
-            {errors && errors[name] ? (
+            {errors && errors?.[name] ? (
                 <Form.Control.Feedback type="invalid" className="d-block">
-                    {errors[name]['message']}
+                    {errors?.[name]?.['message']}
                 </Form.Control.Feedback>
             ) : null}
         </>
@@ -200,13 +196,13 @@ const SelectInput = ({
                 }}
                 children={children}
                 className={className}
-                isInvalid={errors && errors[name] ? true : false}
+                isInvalid={errors && errors?.[name] ? true : false}
                 {...(register ? register(name) : {})}
                 {...otherProps}
             />
 
-            {errors && errors[name] ? (
-                <Form.Control.Feedback type="invalid">{errors[name]['message']}</Form.Control.Feedback>
+            {errors && errors?.[name] ? (
+                <Form.Control.Feedback type="invalid">{errors?.[name]?.['message']}</Form.Control.Feedback>
             ) : null}
         </>
     );

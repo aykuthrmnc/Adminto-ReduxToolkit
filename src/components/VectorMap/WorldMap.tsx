@@ -1,4 +1,3 @@
-import React from 'react';
 import 'jsvectormap';
 import 'jsvectormap/dist/maps/world.js';
 

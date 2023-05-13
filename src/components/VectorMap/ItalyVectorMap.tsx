@@ -1,6 +1,5 @@
-import React from 'react';
 import 'jsvectormap';
-import 'jsvectormap/dist/maps/italy.js';
+// import 'jsvectormap/dist/maps/italy.js';
 
 //components
 import BaseVectorMap from './BaseVectorMap';

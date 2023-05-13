@@ -57,7 +57,7 @@ const ForgetPassword = () => {
      */
     const schemaResolver = yupResolver(
         yup.object().shape({
-            email: yup.string().required(t('Please enter Email')).email(t('Please enter Email')),
+            email: yup.string().required(t('Please enter Email')!).email(t('Please enter Email')!),
         })
     );
 
@@ -90,10 +90,10 @@ const ForgetPassword = () => {
             {!passwordReset && (
                 <VerticalForm<UserData> onSubmit={onSubmit} resolver={schemaResolver}>
                     <FormInput
-                        label={t('Email address')}
+                        label={t('Email address')!}
                         type="email"
                         name="email"
-                        placeholder={t('Enter your email')}
+                        placeholder={t('Enter your email')!}
                         containerClass={'mb-3'}
                     />
 

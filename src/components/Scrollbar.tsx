@@ -1,6 +1,6 @@
-import SimpleBar from 'simplebar-react';
+import SimpleBar, { Props } from 'simplebar-react';
 
-type ScrollbarProps = SimpleBar.Props & {
+type ScrollbarProps = Props & {
     className?: string;
     style?: Record<string, unknown>;
     children?: unknown;

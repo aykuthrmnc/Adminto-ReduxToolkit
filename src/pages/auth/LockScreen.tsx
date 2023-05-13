@@ -41,7 +41,7 @@ const LockScreen = () => {
      */
     const schemaResolver = yupResolver(
         yup.object().shape({
-            password: yup.string().required(t('Please enter Password')),
+            password: yup.string().required(t('Please enter Password')!),
         })
     );
 
@@ -54,10 +54,10 @@ const LockScreen = () => {
             </div>
             <VerticalForm<UserData> onSubmit={() => {}} resolver={schemaResolver}>
                 <FormInput
-                    label={t('Password')}
+                    label={t('Password')!}
                     type="password"
                     name="password"
-                    placeholder={t('Enter your password')}
+                    placeholder={t('Enter your password')!}
                     containerClass={'mb-3'}
                 />
 

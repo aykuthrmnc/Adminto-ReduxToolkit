@@ -58,9 +58,9 @@ const Register = () => {
      */
     const schemaResolver = yupResolver(
         yup.object().shape({
-            fullname: yup.string().required(t('Please enter Fullname')),
+            fullname: yup.string().required(t('Please enter Fullname')!),
             email: yup.string().required('Please enter Email').email('Please enter valid Email'),
-            password: yup.string().required(t('Please enter Password')),
+            password: yup.string().required(t('Please enter Password')!),
             checkboxsignup: yup.bool().oneOf([true], 'Must accept Terms and Conditions'),
         })
     );
@@ -92,28 +92,28 @@ const Register = () => {
                 {loading && <Loader />}
                 <VerticalForm<UserData> onSubmit={onSubmit} resolver={schemaResolver} defaultValues={{}}>
                     <FormInput
-                        label={t('Full Name')}
+                        label={t('Full Name')!}
                         type="text"
                         name="fullname"
-                        placeholder={t('Enter your name')}
+                        placeholder={t('Enter your name')!}
                         containerClass={'mb-3'}
                     />
                     <FormInput
-                        label={t('Email address')}
+                        label={t('Email address')!}
                         type="email"
                         name="email"
-                        placeholder={t('Enter your email')}
+                        placeholder={t('Enter your email')!}
                         containerClass={'mb-3'}
                     />
                     <FormInput
-                        label={t('Password')}
+                        label={t('Password')!}
                         type="password"
                         name="password"
-                        placeholder={t('Enter your password')}
+                        placeholder={t('Enter your password')!}
                         containerClass={'mb-3'}
                     />
                     <FormInput
-                        label={t('I accept Terms and Conditions')}
+                        label={t('I accept Terms and Conditions')!}
                         type="checkbox"
                         name="checkboxsignup"
                         containerClass={'mb-3'}
