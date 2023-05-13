@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // component
 import CardWithImage1 from './CardWithImage1';
@@ -21,8 +21,8 @@ import CardWithNavigation from './CardWithNavigation';
 import GridCards from './GridCards';
 
 // images
-import cardImg1 from '../../../assets/images/gallery/5.jpg';
-import cardImg2 from '../../../assets/images/gallery/7.jpg';
+import cardImg1 from 'assets/images/gallery/5.jpg';
+import cardImg2 from 'assets/images/gallery/7.jpg';
 
 // dummy data
 import { CardGroupDetails } from './data';

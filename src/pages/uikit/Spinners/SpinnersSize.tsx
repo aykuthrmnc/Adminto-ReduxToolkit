@@ -1,7 +1,7 @@
 import { Card } from 'react-bootstrap';
 
 // component
-import Spinner from '../../../components/Spinner';
+import Spinner from 'components/Spinner';
 
 const SpinnersSizes = () => {
     const sizes: ('lg' | 'md' | 'sm')[] = ['lg', 'md', 'sm'];

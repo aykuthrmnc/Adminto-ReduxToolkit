@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Row, Col, Card, Toast } from 'react-bootstrap';
 
 // images
-import logo from '../../../assets/images/logo-sm.png';
+import logo from 'assets/images/logo-sm.png';
 
 const DefaultToasts = () => {
     const [show, setShow] = useState<boolean>(true);

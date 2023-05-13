@@ -3,21 +3,22 @@ import { Breadcrumb, Col, Container, Row } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 
 // constants
-import { LayoutTypes, TopbarTheme } from '../../constants/layout';
+import { LayoutTypes, TopbarTheme } from 'constants/layout';
 
 // hooks
-import { useRedux } from '../../hooks';
+import { useRedux } from 'hooks';
 
 // utils
-import { changeBodyAttribute } from '../../utils';
-import { changeTopbarTheme } from '../../redux/layout';
+import { changeBodyAttribute } from 'utils';
+import { changeTopbarTheme } from 'redux/layout';
+import { Link } from 'react-router-dom';
 
 // code splitting and lazy loading
 // https://blog.logrocket.com/lazy-loading-components-in-react-16-6-6cea535c0b52
-const Topbar = React.lazy(() => import('../Topbar'));
+const Topbar = React.lazy(() => import('layouts/Topbar'));
 const Navbar = React.lazy(() => import('./Navbar'));
-const Footer = React.lazy(() => import('../Footer'));
-const RightSidebar = React.lazy(() => import('../RightSidebar'));
+const Footer = React.lazy(() => import('layouts/Footer'));
+const RightSidebar = React.lazy(() => import('layouts/RightSidebar'));
 
 const loading = () => <div className="text-center"></div>;
 
@@ -37,7 +38,7 @@ const HorizontalLayout = ({ children }: HorizontalLayoutProps) => {
             menuPosition: state.Layout.menuPosition,
             topbarTheme: state.Layout.topbarTheme,
             isOpenRightSideBar: state.Layout.isOpenRightSideBar,
-            pageTitle: state.PageTitle.pageTitle,
+            pageTitle: state.Layout.pageTitle,
         })
     );
 
@@ -97,7 +98,9 @@ const HorizontalLayout = ({ children }: HorizontalLayoutProps) => {
                                     <div className="page-title-box">
                                         <div className="page-title-right">
                                             <Breadcrumb className="m-0">
-                                                <Breadcrumb.Item href="/">Adminto</Breadcrumb.Item>
+                                                <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/' }}>
+                                                    Adminto
+                                                </Breadcrumb.Item>
 
                                                 {(pageTitle?.breadCrumbItems || []).map(
                                                     (

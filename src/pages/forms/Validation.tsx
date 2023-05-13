@@ -5,10 +5,10 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import { FormInput, VerticalForm } from '../../components/form';
+import { FormInput, VerticalForm } from 'components/form';
 
 type UserData = {
     username: string;

@@ -4,7 +4,7 @@ import { Accordion, AccordionContext, Button, Card, Col, Row, useAccordionButton
 import { Link } from 'react-router-dom';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 type CustomToggleProps = {
     children: React.ReactNode;

@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // component
 import Statistics from './Statistics';
@@ -14,7 +14,6 @@ import Projects from './Projects';
 
 // dummy data
 import { messages, projectDetails } from './data';
-import { useEffect } from 'react';
 
 const DashBoard1 = () => {
     // set pagetitle

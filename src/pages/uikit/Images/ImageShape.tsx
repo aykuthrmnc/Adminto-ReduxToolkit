@@ -1,9 +1,9 @@
 import { Col, Row } from 'react-bootstrap';
 
 // images
-import avatar6 from '../../../assets/images/users/user-6.jpg';
-import img1 from '../../../assets/images/small/img-1.jpg';
-import img2 from '../../../assets/images/small/img-3.jpg';
+import avatar6 from 'assets/images/users/user-6.jpg';
+import img1 from 'assets/images/small/img-1.jpg';
+import img2 from 'assets/images/small/img-3.jpg';
 
 const ImageShapes = () => {
     return (

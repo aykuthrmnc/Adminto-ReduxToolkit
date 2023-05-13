@@ -7,10 +7,10 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // hooks
-import { usePageTitle } from '../../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // component
-import { FormInput } from '../../../../components/form';
+import { FormInput } from 'components/form';
 
 import TaskItem from './Task';
 
@@ -21,7 +21,7 @@ import { KanbanBoardTask } from './types';
 import { tasks } from './data';
 
 // images
-import defaultAvatar from '../../../../assets/images/users/user-1.jpg';
+import defaultAvatar from 'assets/images/users/user-1.jpg';
 
 type task = {
     upcomingTasks: KanbanBoardTask[];

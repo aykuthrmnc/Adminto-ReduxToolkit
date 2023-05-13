@@ -2,10 +2,10 @@ import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import FileUploader from '../../components/FileUploader';
+import FileUploader from 'components/FileUploader';
 
 const FileUpload = () => {
     // set pagetitle

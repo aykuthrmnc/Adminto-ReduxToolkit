@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 // types
-import { PricingPlan } from '../pages/other/types';
+import { PricingPlan } from 'pages/other/types';
 
 type PricingCardProps = {
     plans: PricingPlan[];

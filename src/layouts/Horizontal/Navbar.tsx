@@ -2,7 +2,7 @@ import { Collapse } from 'react-bootstrap';
 import classNames from 'classnames';
 
 // helpers
-import { getHorizontalMenuItems } from '../../helpers/menu';
+import { getHorizontalMenuItems } from 'helpers/menu';
 
 // components
 import AppMenu from './Menu';

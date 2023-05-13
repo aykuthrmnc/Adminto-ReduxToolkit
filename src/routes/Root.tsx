@@ -1,6 +1,6 @@
 import { Navigate } from 'react-router-dom';
 
-// import { APICore } from '../helpers/api/apiCore';
+// import { APICore } from 'helpers/api/apiCore';
 
 const Root = () => {
     // const api = new APICore();

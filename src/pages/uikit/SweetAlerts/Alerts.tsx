@@ -1,7 +1,7 @@
 import { withSwal } from 'react-sweetalert2';
 
 // images
-import logosm from '../../../assets/images/logo-sm.png';
+import logosm from 'assets/images/logo-sm.png';
 
 const Alerts = withSwal((props: any) => {
     const { swal } = props;

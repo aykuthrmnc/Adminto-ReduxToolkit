@@ -1,7 +1,7 @@
 import { Card } from 'react-bootstrap';
 
 // images
-import cardImg from '../../../assets/images/gallery/3.jpg';
+import cardImg from 'assets/images/gallery/3.jpg';
 
 const CardWithImage3 = () => {
     return (

@@ -1,8 +1,8 @@
 import { Col, Row } from 'react-bootstrap';
 
 // component
-import StatisticsWidget1 from '../../../components/StatisticsWidget1';
-import StatisticsWidget2 from '../../../components/StatisticsWidget2';
+import StatisticsWidget1 from 'components/StatisticsWidget1';
+import StatisticsWidget2 from 'components/StatisticsWidget2';
 
 const Statistics = () => {
     return (

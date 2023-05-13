@@ -4,10 +4,10 @@ import { Collapse } from 'react-bootstrap';
 import classNames from 'classnames';
 
 //helpers
-import { findAllParent, findMenuItem } from '../helpers/menu';
+import { findAllParent, findMenuItem } from 'helpers/menu';
 
 // constants
-import { MenuItemTypes } from '../constants/menu';
+import { MenuItemTypes } from 'constants/menu';
 
 type SubMenus = {
     item: MenuItemTypes;

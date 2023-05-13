@@ -3,10 +3,10 @@ import Select, { components } from 'react-select';
 import classNames from 'classnames';
 
 // utils
-import { groupByFields } from '../../utils';
+import { groupByFields } from 'utils';
 
 // types
-import { SearchOptions } from '../../layouts/types';
+import { SearchOptions } from 'layouts/types';
 
 type TopbarSearchProps = {
     options: SearchOptions[];

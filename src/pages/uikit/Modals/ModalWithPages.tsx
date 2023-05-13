@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Button, Card, Modal } from 'react-bootstrap';
 
 // images
-import logodark from '../../../assets/images/logo-dark.png';
-import logolight from '../../../assets/images/logo-light.png';
+import logodark from 'assets/images/logo-dark.png';
+import logolight from 'assets/images/logo-light.png';
 
 const ModalsWithPages = () => {
     const [signUpModal, setSignUpModal] = useState<boolean>(false);

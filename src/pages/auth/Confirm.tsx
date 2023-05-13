@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import AuthLayout from './AuthLayout';
 
 // images
-import mail_confirm from '../../assets/images/mail_confirm.png';
+import mail_confirm from 'assets/images/mail_confirm.png';
 
 const Confirm = () => {
     const { t } = useTranslation();

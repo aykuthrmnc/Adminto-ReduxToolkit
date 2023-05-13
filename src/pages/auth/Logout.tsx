@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 // hooks
-import { useRedux } from '../../hooks/';
+import { useRedux } from 'hooks/';
 
 // components
 import AuthLayout from './AuthLayout';
 
 // images
-import LogoDark from '../../assets/images/logo-dark.png';
-import LogoLight from '../../assets/images/logo-light.png';
-import { logoutUser, resetAuth } from '../../redux/auth';
+import LogoDark from 'assets/images/logo-dark.png';
+import LogoLight from 'assets/images/logo-light.png';
+import { logoutUser, resetAuth } from 'redux/auth';
 
 const LogoutIcon = () => {
     return (

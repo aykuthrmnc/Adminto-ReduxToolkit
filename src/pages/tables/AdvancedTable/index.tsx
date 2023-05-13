@@ -1,10 +1,10 @@
 import { Card, Col, Row } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // component
-import Table from '../../../components/Table';
+import Table from 'components/Table';
 
 //dummy data
 import { records as data, expandableRecords } from './data';

@@ -1,7 +1,7 @@
 import { Button, Card, Dropdown } from 'react-bootstrap';
 
 // types
-// import { Contact } from '../pages/apps/Contacts/List/types';
+// import { Contact } from 'pages/apps/Contacts/List/types';
 
 const ContactDetails = () => {
     return (

@@ -6,13 +6,13 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslation } from 'react-i18next';
 
 // hooks
-import { useRedux } from '../../hooks/';
+import { useRedux } from 'hooks/';
 
 // components
-import { VerticalForm, FormInput } from '../../components/form/';
+import { VerticalForm, FormInput } from 'components/form/';
 
 import AuthLayout from './AuthLayout';
-import { forgotPassword, resetAuth } from '../../redux/auth';
+import { forgotPassword, resetAuth } from 'redux/auth';
 
 type UserData = {
     email: string;

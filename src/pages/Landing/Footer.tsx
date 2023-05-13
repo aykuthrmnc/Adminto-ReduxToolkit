@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // images
-import logoLight from '../../assets/images/logo-light.png';
+import logoLight from 'assets/images/logo-light.png';
 
 const Footer = () => {
     return (

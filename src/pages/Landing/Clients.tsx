@@ -4,10 +4,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Testimonial } from './types';
 
 // images
-import img1 from '../../assets/images/landing/clients/1.png';
-import img2 from '../../assets/images/landing/clients/2.png';
-import img3 from '../../assets/images/landing/clients/3.png';
-import img4 from '../../assets/images/landing/clients/4.png';
+import img1 from 'assets/images/landing/clients/1.png';
+import img2 from 'assets/images/landing/clients/2.png';
+import img3 from 'assets/images/landing/clients/3.png';
+import img4 from 'assets/images/landing/clients/4.png';
 
 type ClientsProps = {
     testimonials: Testimonial[];

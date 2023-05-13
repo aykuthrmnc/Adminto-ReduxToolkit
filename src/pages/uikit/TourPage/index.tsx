@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import Joyride, { Step, CallBackProps, STATUS } from 'react-joyride';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // images
-import logoDark from '../../../assets/images/logo-dark.png';
-import logoLight from '../../../assets/images/logo-light.png';
+import logoDark from 'assets/images/logo-dark.png';
+import logoLight from 'assets/images/logo-light.png';
 
 const Tourpage = () => {
     // set pagetitle

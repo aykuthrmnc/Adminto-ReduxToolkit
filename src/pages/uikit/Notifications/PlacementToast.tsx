@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Card, Toast, ToastContainer, Form } from 'react-bootstrap';
 
 // images
-import logo from '../../../assets/images/logo-sm.png';
+import logo from 'assets/images/logo-sm.png';
 
 const PlacementToast = () => {
     type ToastPositions =

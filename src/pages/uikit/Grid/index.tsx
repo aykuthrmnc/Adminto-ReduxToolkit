@@ -1,7 +1,7 @@
 import { Card, Col, Row, Table } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 const Grid = () => {
     // set pagetitle

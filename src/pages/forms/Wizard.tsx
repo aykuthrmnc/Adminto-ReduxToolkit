@@ -7,10 +7,10 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import { FormInput } from '../../components/form/';
+import { FormInput } from 'components/form/';
 
 const BasicWizard = () => {
     // active tab key

@@ -3,7 +3,7 @@ import Nestable from 'react-nestable';
 import { Row, Col, Card } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // styles
 import 'react-nestable/dist/styles/index.css';

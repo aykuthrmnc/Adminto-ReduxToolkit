@@ -1,9 +1,9 @@
 import { Card, Col, Row } from 'react-bootstrap';
 
 // images
-import user1 from '../../../assets/images/users/user-7.jpg';
-import user2 from '../../../assets/images/users/user-8.jpg';
-import user3 from '../../../assets/images/users/user-9.jpg';
+import user1 from 'assets/images/users/user-7.jpg';
+import user2 from 'assets/images/users/user-8.jpg';
+import user3 from 'assets/images/users/user-9.jpg';
 
 const RoundedCircle = () => {
     return (

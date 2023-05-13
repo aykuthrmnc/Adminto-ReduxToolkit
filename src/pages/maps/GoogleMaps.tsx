@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { Map, Marker, GoogleApiWrapper, InfoWindow } from 'google-maps-react';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 type MapContainerProps = {
     google: any;

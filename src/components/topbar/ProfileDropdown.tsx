@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 // hooks
-import { useToggle } from '../../hooks/';
+import { useToggle } from 'hooks/';
 
 // types
-import { ProfileMenu } from '../../layouts/types';
+import { ProfileMenu } from 'layouts/types';
 
 type ProfileDropdownProps = {
     userImage: string;

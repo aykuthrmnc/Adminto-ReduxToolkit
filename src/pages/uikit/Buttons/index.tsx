@@ -3,7 +3,7 @@ import BlockButton from './BlockButton';
 import ButtonGroups from './ButtonGroups';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // types
 import { Variant } from './types';

@@ -2,10 +2,10 @@ import { Suspense, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 // hooks
-import { useRedux } from '../hooks/';
+import { useRedux } from 'hooks/';
 
 // utils
-import { changeBodyAttribute } from '../utils';
+import { changeBodyAttribute } from 'utils';
 
 const loading = () => <div className=""></div>;
 

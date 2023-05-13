@@ -3,12 +3,12 @@ import { Tab } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // hooks
-import { useRedux } from '../hooks/';
+import { useRedux } from 'hooks/';
 
 // components
-import Scrollbar from '../components/Scrollbar';
-import ThemeCustomizer from '../components/ThemeCustomizer';
-import { hideRightSidebar } from '../redux/layout';
+import Scrollbar from 'components/Scrollbar';
+import ThemeCustomizer from 'components/ThemeCustomizer';
+import { hideRightSidebar } from 'redux/layout';
 
 const RightSidebar = () => {
     const { dispatch, appSelector } = useRedux();

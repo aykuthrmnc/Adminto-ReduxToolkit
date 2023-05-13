@@ -3,10 +3,10 @@ import { Row, Col, Card, Form, FloatingLabel, InputGroup, Button, Dropdown, Drop
 import classNames from 'classnames';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import { FormInput } from '../../components/form';
+import { FormInput } from 'components/form';
 
 type Colors = {
     variant: string;

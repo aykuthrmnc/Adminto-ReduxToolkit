@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
 import DefaultProgress from './DefaultProgress';

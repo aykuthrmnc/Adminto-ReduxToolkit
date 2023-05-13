@@ -2,16 +2,16 @@ import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // react plugin for creating vector maps
-import { WorldVectorMap } from '../../components/VectorMap';
-import { RussiaVectorMap } from '../../components/VectorMap';
-import { SpainVectorMap } from '../../components/VectorMap';
-import { CanadaVectorMap } from '../../components/VectorMap';
-import { UsaVectorMap } from '../../components/VectorMap';
-import { ItalyVectorMap } from '../../components/VectorMap';
-import { IraqVectorMap } from '../../components/VectorMap';
+import { WorldVectorMap } from 'components/VectorMap';
+import { RussiaVectorMap } from 'components/VectorMap';
+import { SpainVectorMap } from 'components/VectorMap';
+import { CanadaVectorMap } from 'components/VectorMap';
+import { UsaVectorMap } from 'components/VectorMap';
+import { ItalyVectorMap } from 'components/VectorMap';
+import { IraqVectorMap } from 'components/VectorMap';
 
 const VectorMaps = () => {
     // set pagetitle

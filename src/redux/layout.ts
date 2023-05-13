@@ -1,27 +1,18 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { LayoutTypes } from '../constants';
-
-type PageTitle = {
-    title: string;
-    breadCrumbItems: {
-        label: string;
-        path: string;
-        active?: boolean;
-    }[];
-};
 
 const initialState = {
     theme: 'dark',
     layoutColor: 'dark',
-    layoutType: 'vertical',
+    layoutType: 'horizontal',
     layoutWidth: 'fluid',
-    menuPosition: 'fixed',
+    menuPosition: 'scrollable',
     leftSideBarTheme: 'dark',
     leftSideBarType: 'default',
     showSidebarUserInfo: true,
     topbarTheme: 'dark',
     isOpenRightSideBar: false,
+    pageTitle: { title: '', breadCrumbItems: [] },
 };
 
 export const login = createAsyncThunk('login', async (params: { email: string; password: string }) => {
@@ -81,6 +72,9 @@ const layout = createSlice({
         changeTopbarTheme: (state, action) => {
             state.topbarTheme = action.payload;
         },
+        changePageTitle: (state, action) => {
+            state.pageTitle = action.payload;
+        },
     },
 });
 
@@ -95,5 +89,6 @@ export const {
     changeSidebarType,
     toggleSidebarUserInfo,
     changeTopbarTheme,
+    changePageTitle,
 } = layout.actions;
 export default layout.reducer;

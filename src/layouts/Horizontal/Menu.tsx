@@ -4,16 +4,16 @@ import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames';
 
 // helpers
-import { findAllParent, findMenuItem } from '../../helpers/menu';
+import { findAllParent, findMenuItem } from 'helpers/menu';
 
 // constants
-import { MenuItemTypes } from '../../constants/menu';
+import { MenuItemTypes } from 'constants/menu';
 
 // utils
-import { splitArray } from '../../utils/';
+import { splitArray } from 'utils/';
 
 // custom hook
-import { useViewport } from '../../hooks';
+import { useViewport } from 'hooks';
 
 type MenuItems = {
     item: MenuItemTypes;

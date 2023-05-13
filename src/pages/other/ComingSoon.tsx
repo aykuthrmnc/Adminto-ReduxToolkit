@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Countdown, { CountdownTimeDelta } from 'react-countdown';
 
 // images
-import logo from '../../assets/images/logo-dark.png';
+import logo from 'assets/images/logo-dark.png';
 
 const ComingSoon = () => {
     useEffect(() => {

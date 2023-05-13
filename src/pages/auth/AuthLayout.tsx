@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 // images
-import LogoDark from '../../assets/images/logo-dark.png';
-import LogoLight from '../../assets/images/logo-light.png';
+import LogoDark from 'assets/images/logo-dark.png';
+import LogoLight from 'assets/images/logo-light.png';
 
 type AccountLayoutProps = {
     hasLogo?: boolean;

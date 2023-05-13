@@ -5,12 +5,12 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // components
-import { VerticalForm, FormInput } from '../../components/form/';
+import { VerticalForm, FormInput } from 'components/form/';
 
 import AuthLayout from './AuthLayout';
 
 // images
-import userImg from '../../assets/images/users/user-1.jpg';
+import userImg from 'assets/images/users/user-1.jpg';
 
 type UserData = {
     password: string;

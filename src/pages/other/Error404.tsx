@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 // components
-import AuthLayout from '../auth/AuthLayout';
+import AuthLayout from 'pages/auth/AuthLayout';
 
 const Error404 = () => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useRedux } from '.';
-import { changePageTitle } from '../redux/pageTitle';
+import { changePageTitle } from 'redux/layout';
 
 export default function usePageTitle(value: {
     title: string;

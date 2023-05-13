@@ -6,10 +6,10 @@ import { Typeahead } from 'react-bootstrap-typeahead';
 import MaskedInput from 'react-text-mask';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import AdmintoDatepicker from '../../components/Datepicker';
+import AdmintoDatepicker from 'components/Datepicker';
 
 type Option = string | Record<string, any>;
 

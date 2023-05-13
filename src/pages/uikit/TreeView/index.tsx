@@ -2,7 +2,7 @@ import { Card, Col, Dropdown, Row } from 'react-bootstrap';
 import DeniReactTreeView from 'deni-react-treeview';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // dummy data
 import { basicNodes, checkboxNodes } from './data';

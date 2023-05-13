@@ -1,5 +1,5 @@
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 const Starter = () => {
     // set pagetitle

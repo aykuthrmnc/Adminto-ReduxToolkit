@@ -1,7 +1,7 @@
 import { Button, Card, Col, Row } from 'react-bootstrap';
 
 // component
-import Spinner from '../../../components/Spinner';
+import Spinner from 'components/Spinner';
 
 const ButtonSpinners = () => {
     return (

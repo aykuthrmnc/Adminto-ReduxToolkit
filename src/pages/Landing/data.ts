@@ -2,23 +2,23 @@
 import { Layout, PricingPlan, Statistic, Testimonial, Service } from './types';
 
 // images
-import image1 from '../../assets/images/landing/icons/layers.png';
-import image2 from '../../assets/images/landing/icons/core.png';
-import image3 from '../../assets/images/landing/icons/paperdesk.png';
-import image4 from '../../assets/images/landing/icons/solarsystem.png';
-import image5 from '../../assets/images/landing/icons/datatext.png';
-import image6 from '../../assets/images/landing/icons/browserscript.png';
+import image1 from 'assets/images/landing/icons/layers.png';
+import image2 from 'assets/images/landing/icons/core.png';
+import image3 from 'assets/images/landing/icons/paperdesk.png';
+import image4 from 'assets/images/landing/icons/solarsystem.png';
+import image5 from 'assets/images/landing/icons/datatext.png';
+import image6 from 'assets/images/landing/icons/browserscript.png';
 
-import layout1 from '../../assets/images/landing/demo/demo-1.jpg';
-import layout2 from '../../assets/images/landing/demo/demo-2.jpg';
-import layout3 from '../../assets/images/landing/demo/demo-3.jpg';
-import layout4 from '../../assets/images/landing/demo/demo-4.jpg';
-import layout5 from '../../assets/images/landing/demo/demo-5.jpg';
-import layout6 from '../../assets/images/landing/demo/demo-6.jpg';
+import layout1 from 'assets/images/landing/demo/demo-1.jpg';
+import layout2 from 'assets/images/landing/demo/demo-2.jpg';
+import layout3 from 'assets/images/landing/demo/demo-3.jpg';
+import layout4 from 'assets/images/landing/demo/demo-4.jpg';
+import layout5 from 'assets/images/landing/demo/demo-5.jpg';
+import layout6 from 'assets/images/landing/demo/demo-6.jpg';
 
-import testi1 from '../../assets/images/landing/testi/img-1.png';
-import testi2 from '../../assets/images/landing/testi/img-2.png';
-import testi3 from '../../assets/images/landing/testi/img-3.png';
+import testi1 from 'assets/images/landing/testi/img-1.png';
+import testi2 from 'assets/images/landing/testi/img-2.png';
+import testi3 from 'assets/images/landing/testi/img-3.png';
 
 const layouts: Layout[] = [
     {

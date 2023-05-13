@@ -1,7 +1,7 @@
 import { Card, ListGroup } from 'react-bootstrap';
 
 // images
-import cardImg from '../../../assets/images/gallery/2.jpg';
+import cardImg from 'assets/images/gallery/2.jpg';
 
 const CardWithImage2 = () => {
     return (

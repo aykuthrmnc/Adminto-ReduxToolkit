@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 // images
-import logo from '../../assets/images/logo-light.png';
-import logo1 from '../../assets/images/logo-dark.png';
+import logo from 'assets/images/logo-light.png';
+import logo1 from 'assets/images/logo-dark.png';
 
 const NavBar = () => {
     const { user, userLoggedIn } = useSelector((state: any) => ({

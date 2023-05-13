@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // components
-import { FormInput } from '../../components/form';
+import { FormInput } from 'components/form';
 
 const Contact = () => {
     // form validation schema

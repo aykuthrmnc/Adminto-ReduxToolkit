@@ -1,13 +1,13 @@
 import { Col, Row } from 'react-bootstrap';
 
 // component
-import StatisticsWidget3 from '../../../components/StatisticsWidget3';
+import StatisticsWidget3 from 'components/StatisticsWidget3';
 
 // images
-import avatar1 from '../../../assets/images/users/user-3.jpg';
-import avatar2 from '../../../assets/images/users/user-2.jpg';
-import avatar3 from '../../../assets/images/users/user-1.jpg';
-import avatar4 from '../../../assets/images/users/user-10.jpg';
+import avatar1 from 'assets/images/users/user-3.jpg';
+import avatar2 from 'assets/images/users/user-2.jpg';
+import avatar3 from 'assets/images/users/user-1.jpg';
+import avatar4 from 'assets/images/users/user-10.jpg';
 
 const Users = () => {
     return (

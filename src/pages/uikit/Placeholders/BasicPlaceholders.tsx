@@ -1,8 +1,8 @@
 import { Button, Card, Col, Placeholder, Row } from 'react-bootstrap';
 
 // images
-import img1 from '../../../assets/images/small/img-1.jpg';
-import img2 from '../../../assets/images/small/img-3.jpg';
+import img1 from 'assets/images/small/img-1.jpg';
+import img2 from 'assets/images/small/img-3.jpg';
 
 const BasicPlaceholders = () => {
     return (

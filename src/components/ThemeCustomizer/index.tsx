@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Alert, Button } from 'react-bootstrap';
 
 // constants
-import * as layoutConstants from '../../constants/layout';
+import * as layoutConstants from 'constants/layout';
 
 // components
 import LayoutTypes from './LayoutTypes';
@@ -14,8 +14,8 @@ import LeftSideBarType from './LeftSideBarType';
 import SidebarUserInfo from './SidebarUserInfo';
 import TopbarTheme from './TopbarTheme';
 import { useDispatch, useSelector } from 'react-redux';
-import { useViewport } from '../../hooks';
-import { changeLayout, changeLayoutColor, changeLayoutWidth, changeMenuPositions, changeSidebarTheme, changeSidebarType, changeTopbarTheme, toggleSidebarUserInfo } from '../../redux/layout';
+import { useViewport } from 'hooks';
+import { changeLayout, changeLayoutColor, changeLayoutWidth, changeMenuPositions, changeSidebarTheme, changeSidebarType, changeTopbarTheme, toggleSidebarUserInfo } from 'redux/layout';
 
 const ThemeCustomizer = () => {
     const dispatch = useDispatch();

@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 import Select from 'react-select';
 
 // hooks
-import { usePageTitle } from '../../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // images
-import user1 from '../../../../assets/images/users/user-1.jpg';
-import user2 from '../../../../assets/images/users/user-2.jpg';
-import user3 from '../../../../assets/images/users/user-3.jpg';
-import user5 from '../../../../assets/images/users/user-5.jpg';
-import user8 from '../../../../assets/images/users/user-8.jpg';
+import user1 from 'assets/images/users/user-1.jpg';
+import user2 from 'assets/images/users/user-2.jpg';
+import user3 from 'assets/images/users/user-3.jpg';
+import user5 from 'assets/images/users/user-5.jpg';
+import user8 from 'assets/images/users/user-8.jpg';
 
-import img1 from '../../../../assets/images/attached-files/img-1.jpg';
-import img2 from '../../../../assets/images/attached-files/img-2.jpg';
-import img3 from '../../../../assets/images/attached-files/img-3.jpg';
+import img1 from 'assets/images/attached-files/img-1.jpg';
+import img2 from 'assets/images/attached-files/img-2.jpg';
+import img3 from 'assets/images/attached-files/img-3.jpg';
 
 const TaskDetail = () => {
     // set pagetitle

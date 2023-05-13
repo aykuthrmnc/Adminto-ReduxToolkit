@@ -2,10 +2,10 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
-import PricingCard from '../../components/PricingCard';
+import PricingCard from 'components/PricingCard';
 
 // dummy data
 import { pricingPlans, pricingPlans2 } from './data';

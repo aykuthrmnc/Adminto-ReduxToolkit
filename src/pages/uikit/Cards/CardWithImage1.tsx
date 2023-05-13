@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 
 // images
-import cardImg from '../../../assets/images/gallery/1.jpg';
+import cardImg from 'assets/images/gallery/1.jpg';
 
 const CardWithImage1 = () => {
     return (

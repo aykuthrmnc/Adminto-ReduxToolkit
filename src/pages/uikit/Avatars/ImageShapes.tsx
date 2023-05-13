@@ -1,11 +1,11 @@
 import { Card, Col, Row } from 'react-bootstrap';
 
 // images
-import img1 from '../../../assets/images/small/img-2.jpg';
-import img2 from '../../../assets/images/users/user-5.jpg';
-import img3 from '../../../assets/images/users/user-7.jpg';
-import img4 from '../../../assets/images/small/img-3.jpg';
-import img5 from '../../../assets/images/users/user-8.jpg';
+import img1 from 'assets/images/small/img-2.jpg';
+import img2 from 'assets/images/users/user-5.jpg';
+import img3 from 'assets/images/users/user-7.jpg';
+import img4 from 'assets/images/small/img-3.jpg';
+import img5 from 'assets/images/users/user-8.jpg';
 
 const ImageShapes = () => {
     return (

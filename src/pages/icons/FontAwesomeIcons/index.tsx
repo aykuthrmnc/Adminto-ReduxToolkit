@@ -2,7 +2,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import classNames from 'classnames';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // data
 import { FAICONS_LIST } from './data';

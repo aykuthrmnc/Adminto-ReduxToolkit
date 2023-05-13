@@ -5,13 +5,13 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useTranslation } from 'react-i18next';
 
 // components
-import { VerticalForm, FormInput } from '../../components/form/';
-import Loader from '../../components/Loader';
+import { VerticalForm, FormInput } from 'components/form/';
+import Loader from 'components/Loader';
 
 import AuthLayout from './AuthLayout';
-import { login } from '../../redux/auth';
-import { RootState } from '../../redux';
-import { useRedux } from '../../hooks';
+import { RootState } from 'redux';
+import { useRedux } from 'hooks';
+import { login } from 'redux/auth';
 
 type LocationState = {
     from?: Location;

@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 // hooks
-import { useToggle } from '../../hooks';
+import { useToggle } from 'hooks';
 
 // components
-import Scrollbar from '../Scrollbar';
+import Scrollbar from 'components/Scrollbar';
 
 // dummy data
-import { Notification } from '../../layouts/types';
+import { Notification } from 'layouts/types';
 
 type NotificationDropdownProps = {
     notifications: Notification[];

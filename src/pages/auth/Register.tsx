@@ -6,14 +6,14 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // hooks
-import { useRedux } from '../../hooks/';
+import { useRedux } from 'hooks/';
 
 // components
-import { VerticalForm, FormInput } from '../../components/form/';
-import Loader from '../../components/Loader';
+import { VerticalForm, FormInput } from 'components/form/';
+import Loader from 'components/Loader';
 
 import AuthLayout from './AuthLayout';
-import { resetAuth, signupUser } from '../../redux/auth';
+import { resetAuth, signupUser } from 'redux/auth';
 
 type UserData = {
     fullname: string;

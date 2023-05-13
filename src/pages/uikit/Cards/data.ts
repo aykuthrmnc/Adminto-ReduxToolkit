@@ -2,9 +2,9 @@
 import { CardGroupItem } from './types';
 
 // images
-import cardImg1 from '../../../assets/images/gallery/8.jpg';
-import cardImg2 from '../../../assets/images/gallery/9.jpg';
-import cardImg3 from '../../../assets/images/gallery/10.jpg';
+import cardImg1 from 'assets/images/gallery/8.jpg';
+import cardImg2 from 'assets/images/gallery/9.jpg';
+import cardImg3 from 'assets/images/gallery/10.jpg';
 
 const CardGroupDetails: CardGroupItem[] = [
     {

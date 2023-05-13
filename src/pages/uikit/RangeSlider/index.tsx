@@ -4,7 +4,7 @@ import Nouislider from 'nouislider-react';
 import 'nouislider/distribute/nouislider.css';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 type SelectedValsType = {
     [key: number]: { textValue: number; percent: number };

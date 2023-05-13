@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
 import LightBox from './LightBox';

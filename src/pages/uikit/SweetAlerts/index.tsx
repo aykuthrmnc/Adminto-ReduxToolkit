@@ -1,7 +1,7 @@
 import { Row, Col, Card } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // component
 import Alerts from './Alerts';

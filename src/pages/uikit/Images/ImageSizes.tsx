@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 
 // images
-import avatar5 from '../../../assets/images/users/user-5.jpg';
+import avatar5 from 'assets/images/users/user-5.jpg';
 
 const ImageSizes = () => {
     return (

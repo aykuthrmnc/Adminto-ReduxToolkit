@@ -1,9 +1,9 @@
 import { Card, Col } from 'react-bootstrap';
 
 // images
-import cardImg1 from '../../../assets/images/gallery/2.jpg';
-import cardImg2 from '../../../assets/images/gallery/3.jpg';
-import cardImg3 from '../../../assets/images/gallery/4.jpg';
+import cardImg1 from 'assets/images/gallery/2.jpg';
+import cardImg2 from 'assets/images/gallery/3.jpg';
+import cardImg3 from 'assets/images/gallery/4.jpg';
 
 const GridCards = () => {
     return (

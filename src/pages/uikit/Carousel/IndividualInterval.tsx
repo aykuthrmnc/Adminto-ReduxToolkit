@@ -1,9 +1,9 @@
 import { Card, Carousel } from 'react-bootstrap';
 
 // images
-import img1 from '../../../assets/images/small/img-2.jpg';
-import img2 from '../../../assets/images/small/img-3.jpg';
-import img3 from '../../../assets/images/small/img-1.jpg';
+import img1 from 'assets/images/small/img-2.jpg';
+import img2 from 'assets/images/small/img-3.jpg';
+import img3 from 'assets/images/small/img-1.jpg';
 
 const IndividualInterval = () => {
     return (

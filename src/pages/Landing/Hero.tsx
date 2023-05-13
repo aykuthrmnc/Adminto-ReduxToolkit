@@ -2,7 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // images
-import img from '../../assets/images/landing/home-img.png';
+import img from 'assets/images/landing/home-img.png';
 
 const Hero = () => {
     return (

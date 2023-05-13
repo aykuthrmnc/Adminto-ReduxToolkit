@@ -2,11 +2,11 @@
 import { Message, ProjectDetail } from './types';
 
 // images
-import avatar1 from '../../../assets/images/users/user-1.jpg';
-import avatar2 from '../../../assets/images/users/user-2.jpg';
-import avatar3 from '../../../assets/images/users/user-3.jpg';
-import avatar4 from '../../../assets/images/users/user-4.jpg';
-import avatar5 from '../../../assets/images/users/user-5.jpg';
+import avatar1 from 'assets/images/users/user-1.jpg';
+import avatar2 from 'assets/images/users/user-2.jpg';
+import avatar3 from 'assets/images/users/user-3.jpg';
+import avatar4 from 'assets/images/users/user-4.jpg';
+import avatar5 from 'assets/images/users/user-5.jpg';
 
 const messages: Message[] = [
     {

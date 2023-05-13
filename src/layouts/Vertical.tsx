@@ -3,13 +3,13 @@ import { Container } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 
 // hooks
-import { useRedux } from '../hooks/';
+import { useRedux } from 'hooks/';
 
 // constants
 import { LayoutTypes, SideBarTypes } from '../constants';
 
 // utils
-import { changeBodyAttribute } from '../utils';
+import { changeBodyAttribute } from 'utils';
 
 // code splitting and lazy loading
 // https://blog.logrocket.com/lazy-loading-components-in-react-16-6-6cea535c0b52

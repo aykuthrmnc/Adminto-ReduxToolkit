@@ -1,15 +1,15 @@
 import { useEffect, useRef } from 'react';
 
 // helpers
-import { getMenuItems } from '../helpers/menu';
+import { getMenuItems } from 'helpers/menu';
 
 // components
-import Scrollbar from '../components/Scrollbar';
+import Scrollbar from 'components/Scrollbar';
 
 import AppMenu from './Menu';
 
 // images
-import profileImg from '../assets/images/users/user-1.jpg';
+import profileImg from 'assets/images/users/user-1.jpg';
 
 /* user box */
 // const UserBox = () => {

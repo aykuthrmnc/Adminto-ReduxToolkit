@@ -2,9 +2,9 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // images
-import img1 from '../../assets/images/landing/features-img/img-1.png';
-import img2 from '../../assets/images/landing/features-img/img-2.png';
-import img3 from '../../assets/images/landing/features-img/img-3.png';
+import img1 from 'assets/images/landing/features-img/img-1.png';
+import img2 from 'assets/images/landing/features-img/img-2.png';
+import img3 from 'assets/images/landing/features-img/img-3.png';
 
 const Feature = () => {
     return (

@@ -1,47 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { APICore } from '../helpers/api/apiCore';
+import { APICore } from 'helpers/api/apiCore';
 import axios from 'axios';
 
 const api = new APICore();
-
-type UserData = {
-    id: number;
-    email: string;
-    username: string;
-    password: string;
-    firstName: string;
-    lastName: string;
-    role: string;
-    token: string;
-};
-
-enum AuthActionTypes {
-    API_RESPONSE_SUCCESS = '@@auth/API_RESPONSE_SUCCESS',
-    API_RESPONSE_ERROR = '@@auth/API_RESPONSE_ERROR',
-
-    LOGIN_USER = '@@auth/LOGIN_USER',
-    LOGOUT_USER = '@@auth/LOGOUT_USER',
-    SIGNUP_USER = '@@auth/SIGNUP_USER',
-    FORGOT_PASSWORD = '@@auth/FORGOT_PASSWORD',
-    FORGOT_PASSWORD_CHANGE = '@@auth/FORGOT_PASSWORD_CHANGE',
-
-    RESET = '@@auth/RESET',
-}
-
-type AuthActionType = {
-    type:
-        | AuthActionTypes.API_RESPONSE_SUCCESS
-        | AuthActionTypes.API_RESPONSE_ERROR
-        | AuthActionTypes.LOGIN_USER
-        | AuthActionTypes.SIGNUP_USER
-        | AuthActionTypes.LOGOUT_USER
-        | AuthActionTypes.RESET;
-    payload: {
-        actionType?: string;
-        data?: UserData | {};
-        error?: string;
-    };
-};
 
 const initialState = {
     user: {
@@ -55,7 +16,6 @@ const initialState = {
         resetPasswordSuccess: null,
         userLogout: null,
     },
-    theme: 'dark',
 };
 
 const setAuthorization = (token: string | null) => {
@@ -119,7 +79,17 @@ const Auth = createSlice({
             console.log(state);
         },
         logoutUser: (state) => {
-            console.log(state);
+            state.user = {
+                data: null,
+                loading: false,
+                error: '',
+                userSignUp: false,
+                userLoggedIn: false,
+                passwordReset: false,
+                passwordChange: false,
+                resetPasswordSuccess: null,
+                userLogout: null,
+            };
         },
         signupUser: (state, action) => {
             console.log(state);

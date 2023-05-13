@@ -6,24 +6,24 @@ import classNames from 'classnames';
 import { LayoutTypes } from '../../constants';
 
 // hooks
-import { useRedux } from '../../hooks';
+import { useRedux } from 'hooks';
 
 // components
-import SearchDropdown from '../../components/topbar/SearchDropdown';
-import ThemeSetting from '../../components/topbar/ThemeSetting';
-import TopbarSearch from '../../components/topbar/TopbarSearch';
-import NotificationDropdown from '../../components/topbar/NotificationDropdown';
-import ProfileDropdown from '../../components/topbar/ProfileDropdown';
+import SearchDropdown from 'components/topbar/SearchDropdown';
+import ThemeSetting from 'components/topbar/ThemeSetting';
+import TopbarSearch from 'components/topbar/TopbarSearch';
+import NotificationDropdown from 'components/topbar/NotificationDropdown';
+import ProfileDropdown from 'components/topbar/ProfileDropdown';
 
 // dummy data
 import { notifications, profileMenus, searchOptions } from './data';
 
 // images
-import logoSm from '../../assets/images/logo-sm.png';
-import avatar1 from '../../assets/images/users/user-1.jpg';
-import logoDark from '../../assets/images/logo-dark.png';
-import logoLight from '../../assets/images/logo-light.png';
-import { showRightSidebar } from '../../redux/layout';
+import logoSm from 'assets/images/logo-sm.png';
+import avatar1 from 'assets/images/users/user-1.jpg';
+import logoDark from 'assets/images/logo-dark.png';
+import logoLight from 'assets/images/logo-light.png';
+import { showRightSidebar } from 'redux/layout';
 
 type TopbarProps = {
     openLeftMenuCallBack: () => void;
@@ -36,7 +36,7 @@ const Topbar = ({ openLeftMenuCallBack, containerClass }: TopbarProps) => {
 
     const { layout, pageTitle } = appSelector((state: any) => ({
         layout: state.Layout.layoutType,
-        pageTitle: state.PageTitle.pageTitle,
+        pageTitle: state.Layout.pageTitle,
     }));
 
     /**

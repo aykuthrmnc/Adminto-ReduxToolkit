@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 
 // hooks
-import { usePageTitle } from '../../../hooks';
+import { usePageTitle } from 'hooks';
 
 // components
 import DefaultOffcanvas from './DefaultOffcanvas';

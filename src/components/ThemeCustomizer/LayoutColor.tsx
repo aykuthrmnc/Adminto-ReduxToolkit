@@ -1,5 +1,5 @@
 import { Form } from 'react-bootstrap';
-import * as layoutConstants from '../../constants/layout';
+import * as layoutConstants from 'constants/layout';
 
 type LayoutColorProps = {
     changeLayoutColorScheme: (value: string) => void;

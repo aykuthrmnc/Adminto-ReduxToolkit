@@ -1,9 +1,9 @@
 // types
-// import { Contact } from '../../apps/Contacts/List/types';
+// import { Contact } from 'apps/Contacts/List/types';
 import { Statistic } from './types';
 
 // images
-import avatar2 from '../../../assets/images/users/user-9.jpg';
+import avatar2 from 'assets/images/users/user-9.jpg';
 
 const statisticsWidgets: Statistic[] = [
     {
